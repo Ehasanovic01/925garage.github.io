@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>925 Garage - About Us</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">925 Garage</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="about container">
+      <h2>About Us</h2>
+      <p>925 Garage was founded in 2020 by a team of passionate car enthusiasts with a strong commitment to providing high-quality car detailing services. Our expert technicians have years of experience and are dedicated to making your car look its best.</p>
+      <p>We are proud to have received numerous awards and certifications for our exceptional work, and our customer testimonials speak to the quality of our service. At 925 Garage, your satisfaction is our top priority.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 925 Garage. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
+

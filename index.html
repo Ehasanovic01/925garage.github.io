@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>925 Garage - Home</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header>
     <div class="container">
-      <h1 class="logo">925 Garage</h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -21,27 +21,67 @@
     </div>
   </header>
   <main>
-    <section class="services container" id="services" data-aos="fade-up" data-aos-duration="1000">
-      <!-- ... -->
+    <section class="hero" data-aos="fade-in" data-aos-duration="1000">
+      <div class="overlay">
+        <h1>925 Garage</h1>
+        <img src="images/logo.png" alt="925 Garage Logo">
+      </div>
     </section>
 
-    <section class="our-work container" id="our-work">
+    <section class="services" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <h2>Our Services</h2>
+        <!-- Add service details here -->
+        <div class="service">
+          <h3>Interior Detail</h3>
+          <p>Our interior detail service includes a thorough cleaning of your car's interior, including seats, carpets, dashboard, and more.</p>
+        </div>
+        <div class="service">
+          <h3>Exterior Detail</h3>
+          <p>Our exterior detail service includes a comprehensive cleaning of your car's exterior, including a hand wash, wax, and polish.</p>
+        </div>
+        <div class="service">
+          <h3>Engine Bay Cleaning</h3>
+          <p>Our engine bay cleaning service includes a deep cleaning of your car's engine bay to remove dirt, grease, and grime.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-work" data-aos="fade-up" data-aos-duration="1000">
       <h2>Our Work</h2>
-      <!-- Add gallery of photos of cars here -->
-      <div class="gallery">
-        <img src="https://source.unsplash.com/random/300x200?car" alt="Car 1" data-aos="zoom-in" data-aos-duration="1000">
-        <img src="https://source.unsplash.com/random/300x200?car" alt="Car 2" data-aos="zoom-in" data-aos-duration="1000">
-        <img src="https://source.unsplash.com/random/300x200?car" alt="Car 3" data-aos="zoom-in" data-aos-duration="1000">
-        <!-- More images -->
+      <div class="container">
+        <!-- Add gallery of random car images here -->
+        <div class="gallery">
+          <img src="https://source.unsplash.com/random/300x200?car" alt="Car 1">
+          <img src="https://source.unsplash.com/random/300x200?car" alt="Car 2">
+          <img src="https://source.unsplash.com/random/300x200?car" alt="Car 3">
+          <!-- More images -->
+        </div>
+      </div>
+    </section>
+
+    <section class="find-us" data-aos="fade-up" data-aos-duration="1000">
+      <h2>Find Us</h2>
+      <div class="container">
+        <p>Address: 1234 Main St, Anytown, USA</p>
+        <p>Email: info@925garage.com</p>
+        <p>Phone: (555) 123-4567</p>
       </div>
     </section>
   </main>
   <footer>
     <div class="container">
       <p>&copy; 2023 925 Garage. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
     </div>
   </footer>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
+

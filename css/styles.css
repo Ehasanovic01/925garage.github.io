@@ -42,6 +42,67 @@ h2 {
   margin-bottom: 20px;
 }
 
+.hero {
+  position: relative;
+  height: 80vh;
+  background-image: url('https://source.unsplash.com/random/1920x1080?car');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 4rem;
+  margin: 0;
+  z-index: 2;
+}
+
+.hero img {
+  width: 100px;
+  z-index: 2;
+}
+
+.services, .our-work, .find-us {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.service {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1%;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px;
+}
+
 footer {
   background-color: #333;
   color: #fff;

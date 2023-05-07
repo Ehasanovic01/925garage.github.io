@@ -42,6 +42,26 @@ h2 {
   margin-bottom: 20px;
 }
 
+.home-banner .logo-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.home-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.home-banner h1 {
+  color: #fff;
+  font-size: 48px;
+  margin-top: 10px;
+}
+
 .hero {
   position: relative;
   height: 80vh;

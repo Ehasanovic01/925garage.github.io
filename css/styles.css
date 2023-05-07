@@ -95,6 +95,8 @@ header nav ul li a {
   object-fit: cover;
   margin: 10px;
 }
+<link rel="stylesheet" href="css/styles.css">
+
 
 footer {
   background-color: #333;

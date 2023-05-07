@@ -1,4 +1,7 @@
-AOS.init();
+document.addEventListener('DOMContentLoaded', function () {
+  AOS.init();
+});
+
 
 document.getElementById('contact-form').addEventListener('submit', function (event) {
   event.preventDefault();

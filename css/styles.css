@@ -103,6 +103,19 @@ overlay {
   margin: 10px;
 }
 
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
 footer {
   background-color: #333;
   color: #fff;

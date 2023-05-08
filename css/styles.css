@@ -53,6 +53,7 @@ header nav a {
 }
 
 .hero .logo-container {
+    background-image: url("images/amg.jpg");
     position: absolute;
     top: 50%;
     left: 50%;

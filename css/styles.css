@@ -68,6 +68,7 @@ header nav a {
 .hero img {
     width: 200px;
     height: auto;
+    background-image: url('https://source.unsplash.com/random/1600x900?car1');
 }
 
 .hero h1 {

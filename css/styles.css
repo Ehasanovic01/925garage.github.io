@@ -148,6 +148,46 @@ footer {
     font-size: 1.5rem;
 }
 
+
+
+
+
+
+
+
+/* About Us and Contact Us - Common Styles */
+.about-us, .contact-us {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.about-us img, .contact-us form {
+  margin-top: 2rem;
+}
+
+/* Contact Us - Form Styles */
+.contact-us form {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-us label, .contact-us input, .contact-us textarea {
+  width: 100%;
+}
+
+.contact-us textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+
+
+
+
+
+
 /* AOS styles */
 [data-aos] {
     opacity: 0;
@@ -159,120 +199,3 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
-
-
-/* General styles */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
-
-h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-p {
-  margin-bottom: 20px;
-}
-
-a {
-  color: #333;
-  text-decoration: none;
-}
-
-/* Header styles */
-header {
-  background: #333;
-  padding: 10px;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav ul li:last-child {
-  margin-right: 0;
-}
-
-nav ul li a {
-  color: #fff;
-  font-size: 20px;
-}
-
-/* About Us and Contact Us sections */
-.about-us, .contact-us {
-  padding: 40px;
-  text-align: center;
-}
-
-.about-us img, .contact-us form {
-  max-width: 800px;
-  margin: 20px auto;
-  display: block;
-}
-
-/* Form styles */
-form label {
-  display: block;
-  margin-top: 20px;
-}
-
-form input[type='text'],
-form input[type='email'],
-form textarea {
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
-  resize: vertical;
-  margin-top: 5px;
-}
-
-form button {
-  display: inline-block;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-form button:hover {
-  background-color: #666;
-}
-
-/* Footer styles */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.social-icons a {
-  color: #fff;
-  margin: 0 10px;
-  font-size: 24px;
-}
-
-.social-icons a:hover {
-  color: #ccc;
-}

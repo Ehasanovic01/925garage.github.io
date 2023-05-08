@@ -187,6 +187,24 @@ footer {
 
 
 
+/* Contact Us - Submit button */
+.contact-us button {
+  height: 40px; /* Adjust this value to change the button height */
+  font-size: 18px; /* Adjust this value to change the button font size */
+  padding: 5px 15px; /* Add some padding for better appearance */
+  background-color: #f0ad4e; /* Change the background color */
+  color: #ffffff; /* Change the text color */
+  border: none; /* Remove the border */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+  transition: background-color 0.3s; /* Add a transition effect */
+}
+
+.contact-us button:hover {
+  background-color: #df8a3d; /* Change the background color on hover */
+}
+
+
+
 
 
 

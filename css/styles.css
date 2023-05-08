@@ -1,131 +1,106 @@
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-header nav {
-    display: flex;
-    justify-content: center;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-header nav ul {
-    list-style-type: none;
-    padding: 0;
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
 }
 
-header nav li {
-    display: inline;
-    margin: 0 10px;
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
 }
 
-header nav a {
-    text-decoration: none;
-    color: #333;
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  margin-bottom: 20px;
 }
 
 .hero {
-    position: relative;
-    text-align: center;
+  position: relative;
+  height: 80vh;
+  background-image: url('https://source.unsplash.com/random/1920x1080?car');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 4rem;
+  margin: 0;
+  z-index: 2;
 }
 
 .hero img {
-    width: 100%;
-    height: auto;
+  width: 100px;
+  z-index: 2;
 }
 
-.hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-}
-
-.services {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+.services, .our-work, .find-us {
+  margin: 50px 0;
+  text-align: center;
 }
 
 .service {
-    position: relative;
-    width: 32%;
-    height: 200px;
-    overflow: hidden;
-}
-
-.service-image {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    transition: opacity 0.3s;
-}
-
-.service-image-1 {
-    background-image: url('interior-detail-image.jpg');
-}
-
-.service-image-2 {
-    background-image: url('exterior-detail-image.jpg');
-}
-
-.service-image-3 {
-    background-image: url('engine-bay-cleaning-image.jpg');
-}
-
-.service:hover .service-image {
-    opacity: 0.3;
-}
-
-.service-description {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.service:hover .service-description {
-    opacity: 1;
+  display: inline-block;
+  width: 30%;
+  margin: 0 1%;
 }
 
 .gallery {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .gallery img {
-    width: 32%;
-    height: auto;
-}
-
-.find-us {
-    text-align: center;
-}
-
-.find-us img {
-    width: 40px;
-    height: auto;
-    cursor: pointer;
-}
-
-
-.contact label, .contact input, .contact textarea {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.content {
-  flex: 1;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px;
 }
 
 footer {

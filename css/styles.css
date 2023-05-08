@@ -1,139 +1,159 @@
+/* General styles */
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-header {
-	background-color: #333;
-	color: #fff;
-	padding: 20px;
+header nav {
+    display: flex;
+    justify-content: center;
 }
 
-nav {
-	text-align: center;
+header nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+header nav li {
+    display: inline;
+    margin: 0 10px;
 }
 
-nav li {
-	display: inline-block;
-	margin: 0 10px;
-}
-
-nav a {
-	color: #fff;
-	text-decoration: none;
+header nav a {
+    text-decoration: none;
+    color: #333;
 }
 
 .hero {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 90vh;
-}
-
-.hero h1 {
-	font-size: 5rem;
-	margin-bottom: 0;
+    position: relative;
+    text-align: center;
 }
 
 .hero img {
-	width: 150px;
-	margin-top: 20px;
+    width: 100%;
+    height: auto;
 }
 
-.services-row {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: 50px auto;
-	max-width: 1200px;
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
 }
 
 .service {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 20px;
-	max-width: 300px;
-	text-align: center;
+    position: relative;
+    width: 32%;
+    height: 200px;
+    overflow: hidden;
 }
 
-.service img {
-	width: 100%;
-	transition: opacity 0.3s ease-in-out;
+.service-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s;
 }
 
-.service:hover img {
-	opacity: 0.8;
+.service-image-1 {
+    background-image: url('interior-detail-image.jpg');
 }
 
-.service h3 {
-	font-size: 2rem;
-	margin-top: 20px;
+.service-image-2 {
+    background-image: url('exterior-detail-image.jpg');
 }
 
-.service p {
-	font-size: 1.2rem;
-	margin: 10px 0;
+.service-image-3 {
+    background-image: url('engine-bay-cleaning-image.jpg');
 }
 
-.gallery-row {
-	display: flex;
-	justify-content: space-between;
-	margin: 50px auto;
-	max-width: 1200px;
+.service:hover .service-image {
+    opacity: 0.3;
 }
 
-.gallery-row img {
-	width: 30%;
+.service-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
-#find-us {
-	background-color: #eee;
-	padding: 50px;
-	text-align: center;
+.service:hover .service-description {
+    opacity: 1;
 }
 
-#find-us a {
-	display: block;
-	margin-top: 20px;
+.gallery {
+    display: flex;
+    justify-content: space-between;
 }
 
-#find-us img {
-	width: 50%;
+.gallery img {
+    width: 32%;
+    height: auto;
+}
+
+.find-us {
+    text-align: center;
+}
+
+.find-us img {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
 }
 
 footer {
-	background-color: #333;
-	color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 20px;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
 }
 
-footer p {
-	margin: 0;
+footer .social-media {
+    margin-top: 10px;
 }
 
-.social-icons {
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
+footer .social-media img {
+    width: 30px;
+    height: auto;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
-.social-icons img {
-	width: 30px;
-	margin-left: 10px;
+.about, .contact {
+    margin: 20px 0;
+}
+
+.contact label, .contact input, .contact textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }

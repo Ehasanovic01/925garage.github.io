@@ -47,6 +47,7 @@ header nav a {
     position: relative;
     text-align: center;
     height: 100vh;
+    background-image: url("images/m42.jpg");
     background: url('images/925logo.PNG') center no-repeat;
     background-size: cover;
 }

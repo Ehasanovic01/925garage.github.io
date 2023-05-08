@@ -175,12 +175,14 @@ footer {
 
 .contact-us label, .contact-us input, .contact-us textarea {
   width: 100%;
+  height: 40px; /* Adjust this value to change the input box height */
+  font-size: 18px; /* Adjust this value to change the input box font size */
+  padding: 5px;
 }
 
 .contact-us textarea {
-  height: 40px; /* Adjust this value to change the input box height */
-  font-size: 18px; /* Adjust this value to change the input box font size */
-  padding: 5px;;
+  resize: vertical;
+  min-height: 150px;
 }
 
 

@@ -117,27 +117,6 @@ header nav a {
     cursor: pointer;
 }
 
-footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-}
-
-footer .social-media {
-    margin-top: 10px;
-}
-
-footer .social-media img {
-    width: 30px;
-    height: auto;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.about, .contact {
-    margin: 20px 0;
-}
 
 .contact label, .contact input, .contact textarea {
     display: block;
@@ -145,15 +124,78 @@ footer .social-media img {
     margin-bottom: 10px;
 }
 
-.contact textarea {
-    height: 150px;
-    resize: none;
+.content {
+  flex: 1;
 }
 
-.contact button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 5px;
+}
+
+/* Home page styles */
+.home-banner {
+  position: relative;
+  text-align: center;
+}
+
+.home-banner img {
+  width: 100%;
+  height: auto;
+}
+
+.home-banner h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 48px;
+}
+
+/* About and Contact page styles */
+.about-us, .contact-us {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-us img, .contact-us form {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contact-us label {
+  display: block;
+  margin-top: 10px;
+}
+
+.contact-us input, .contact-us textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.contact-us button {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.contact-us button:hover {
+  background-color: #555;
 }

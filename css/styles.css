@@ -178,8 +178,9 @@ footer {
 }
 
 .contact-us textarea {
-  resize: vertical;
-  min-height: 150px;
+  height: 40px; /* Adjust this value to change the input box height */
+  font-size: 18px; /* Adjust this value to change the input box font size */
+  padding: 5px;;
 }
 
 

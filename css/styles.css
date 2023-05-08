@@ -73,6 +73,7 @@ header nav a {
 .hero h1 {
     color: #fff;
     font-size: 3rem;
+    background-image: url('https://source.unsplash.com/random/1600x900?car1');
     margin-top: 0.5rem;
 }
 

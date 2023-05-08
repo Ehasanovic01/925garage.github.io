@@ -1,21 +1,61 @@
-<section id="contact">
-	<h2>Contact Us</h2>
-	<form>
-		<div>
-			<label for="name">Name:</label>
-			<input type="text" id="name" name="name" required>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>925 Garage | Contact Us</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html#about">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div class="hero">
+			<h1>Contact Us</h1>
 		</div>
-		<div>
-			<label for="email">Email:</label>
-			<input type="email" id="email" name="email" required>
+	</header>
+	<main>
+		<section id="contact">
+			<h2>Get In Touch</h2>
+			<form>
+				<div>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required>
+				</div>
+				<div>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+				</div>
+				<div>
+					<label for="message">Message:</label>
+					<textarea id="message" name="message" rows="5" required></textarea>
+				</div>
+				<div>
+					<button type="submit">Send</button>
+				</div>
+			</form>
+			<p>If you have any questions or would like to book a service, please fill out the form above or give us a call at 925-705-9534.</p>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 925 Garage. All rights reserved.</p>
+		<div class="social-icons">
+			<a href="https://www.tiktok.com/@925garage" target="_blank"><img src="tiktok.png" alt="TikTok"></a>
+			<a href="https://www.instagram.com/925garage/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+			<a href="https://www.facebook.com/925garage/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
 		</div>
-		<div>
-			<label for="message">Message:</label>
-			<textarea id="message" name="message" rows="5" required></textarea>
-		</div>
-		<div>
-			<button type="submit">Send</button>
-		</div>
-	</form>
-	<p>If you have any questions or would like to book a service, please fill out the form below or give us a call at 925-705-9534.</p>
-</section>
+	</footer>
+	<script type="text/javascript">
+		const form = document.querySelector('form');
+		form.addEventListener('submit', (event) => {
+			event.preventDefault();
+			alert('Message sent, we will get back to you soon!');
+			form.reset();
+		});
+	</script>
+</body>
+</html>

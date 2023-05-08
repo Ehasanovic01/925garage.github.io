@@ -1,83 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>925 Garage</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>925 Garage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero section -->
-    <section class="hero">
-        <img src="https://source.unsplash.com/random/300x200?car" alt="Car Background">
-        <div class="hero-content">
-            <img src="images/925logo.PNG" alt="Logo">
-            <h1>925 Garage</h1>
-        </div>
-    </section>
-
-    <!-- Services section -->
-    <section class="services">
-        <div class="service">
-            <div class="service-image service-image-1"></div>
-            <div class="service-description">
-                <h3>Interior Detail</h3>
-                <p>Description of the interior detail service.</p>
-            </div>
-        </div>
-        <div class="service">
-            <div class="service-image service-image-2"></div>
-            <div class="service-description">
-                <h3>Exterior Detail</h3>
-                <p>Description of the exterior detail service.</p>
-            </div>
-        </div>
-        <div class="service">
-            <div class="service-image service-image-3"></div>
-            <div class="service-description">
-                <h3>Engine Bay Cleaning</h3>
-                <p>Description of the engine bay cleaning service.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery section -->
-    <section class="gallery">
-        <img src="https://source.unsplash.com/random/300x200?car" alt="Gallery Image 1">
-        <img src="https://source.unsplash.com/random/300x200?car" alt="Gallery Image 2">
-        <img src="https://source.unsplash.com/random/300x200?car" alt="Gallery Image 3">
-    </section>
-
-    <!-- Find us section -->
-    <section class="find-us">
-        <p>Location: Brentwood, CA</p>
-        <p>Address: 835 Darby Dr</p>
-        <a href="https://www.google.com/maps?q=835+Darby+Dr,+Brentwood,+CA+94513" target="_blank">
-            <img src="google-maps-icon.png" alt="Google Maps Icon">
-        </a>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2023 925 Garage. All rights reserved.</p>
-        <div class="social-media">
-            <a href="https://www.tiktok.com/@m.4eign" target="_blank"><img src="tiktok-icon.png" alt="TikTok"></a>
-            <a href="https://www.instagram.com/straightup_esad/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
-        </div>
-    </footer>
-
-    <script src="scripts.js"></script>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero" id="home">
+    <div class="overlay">
+      <img src="images/925logo.PNG" alt="925 Garage Logo">
+      <h1>925 Garage</h1>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service" data-aos="fade-up">
+      <h3>Interior Detail</h3>
+      <p>We provide a comprehensive cleaning and restoration service for your car's interior, ensuring every detail is taken care of.</p>
+    </div>
+    <div class="service" data-aos="fade-up">
+      <h3>Exterior Detail</h3>
+      <p>Our exterior detailing service includes washing, polishing, and waxing to protect and enhance your car's appearance.</p>
+    </div>
+    <div class="service" data-aos="fade-up">
+      <h3>Engine Bay Cleaning</h3>
+      <p>Keep your engine running smoothly and looking its best with our expert engine bay cleaning service.</p>
+    </div>
+  </section>
+  <section class="our-work" id="our-work">
+    <h2>Our Work</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/random/300x200?car1" alt="Car 1" data-aos="fade-up">
+      <img src="https://source.unsplash.com/random/300x200?car2" alt="Car 2" data-aos="fade-up">
+      <img src="https://source.unsplash.com/random/300x200?car3" alt="Car 3" data-aos="fade-up">
+      <img src="https://source.unsplash.com/random/300x200?car4" alt="Car 4" data-aos="fade-up">
+      <img src="https://source.unsplash.com/random/300x200?car5" alt="Car 5" data-aos="fade-up">
+      <img src="https://source.unsplash.com/random/300x200?car6" alt="Car 6" data-aos="fade-up">
+    </div>
+  </section>
+  <section class="find-us" id="find-us">
+    <h2>Find Us</h2>
+    <p>835 Darby Dr, Brentwood, CA</p>
+    <p>Email: ehasanovic027@gmail.com</p>
+    <p>Phone: (925) 705-9534</p>
+  </section>
+  <footer>
+    <p>&copy; 2023 925 Garage. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/925garage" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/925garage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.tiktok.com/@925garage" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
